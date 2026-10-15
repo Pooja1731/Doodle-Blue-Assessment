@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" Content="width=device-width,initial-scaled=1.0">
+        <meta name="description" content="POOJA WEBSITE">
+        <title>STUDENT DATA</title>
+    </head>
+    <body>
+        <header><h1>Personal Data</h1></header>
+        <main><p>STUDENT NAME : POOJA</p></main>
+        <p>PROFILE PICTURE :<br></p>
+        <img src="C:\Users\Pooja\POOJA PIC.jpg" alt =" POOJA " width="200" height="300">
+        <P>COLLEGE : SA ENGINEERING COLLEGE</P>
+        <p>ROLL NO. : 2324063</p>
+        <p>DOB : 31.07.2006</p>
+        <P>DEPT. : Artificial Intelligence and Data Science</P>
+        <p>FAVOURITE SUBJECTS<br></p>
+        <ul>
+            <li>Computer SCience</li>
+            <li>Maths</li>
+        </ul>
+        <p>FAVOURITE ICECREAMS<br></p>
+        <ol start="1">
+            <li>MANGO ICEREAM</li>
+            <LI>CHOCOLATE ICECREAM</LI>
+            <li>STRAWBERRY ICECREAM</li>
+        </ol>
+        <P>CONTACT DETAIL :<br></P>
+        <a href="mailto:jpoojajrpg31@gmail.com">E-Mail<br></a>
+        <a href="tel:+917904176515">Call<br></a>
+        <p>ABOUT ME :<br></p>
+        <a href="about.html">About Me<br></a>
+        <p>LINKS :<BR></p>
+        <a href = "https://www.firefox.com/en-US/channel/desktop/?redirect_source=mozilla-org">Learn html <br></a>
+        <a href = "https://www.firefox.com/en-US/channel/desktop/?redirect_source=mozilla-org" target="_blank">Learn Data of Html</a>
+        <table >
+            <caption>SEMESTER 1 RESULTS</caption>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">SUBJECT</th>
+                    <th scope="col">MARKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Pooja</td>
+                    <td>Maths</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Harini</td>
+                    <td>Science</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Sandhya</td>
+                    <td>English</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Shamiksha</td>
+                    <td>Social</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>STUDENT REGISTRATION</p>
+        <form action="/register" method="post">
+            <label for="name">FULL NAME:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="course">COURSE:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="CSE">Computer Science</option>
+                <option value="AIDS">Artificial Intelligence and Data Science</option>
+            </select>
+            <br><br>
+            <button type="submit">Register<br></button>
+            <input type="checkbox" id="Female" name="Female" value="Female" />
+            <label>Female<br></label>
+            <input type="checkbox" id="Male" name="Male" value="Male" />
+            <label>Male<br></label>
+            <button type="submit" disabled>submit</button>
+        </form>
+
+    </body>
+</html>
