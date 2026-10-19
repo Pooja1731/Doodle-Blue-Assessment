@@ -1,0 +1,462 @@
+/* =========================
+   1. RESET AND BODY
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #102a43;
+}
+
+
+/* =========================
+   2. HEADER AND NAVBAR
+========================= */
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo span {
+    background-color: #f59f00;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fa5252;
+}
+
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+.hero {
+    background-image: url("../images/College campus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px 24px;
+    padding: 40px;
+    min-height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.12);
+}
+
+.hero h1 {
+    color: #102a43;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #102a43;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #fa5252;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e03131;
+    color: #ffffff;
+}
+
+
+/* =========================
+   4. FEATURED EVENTS
+========================= */
+
+.featured-events {
+    padding: 0 24px;
+    margin-top: 30px;
+}
+
+.featured-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.featured-events h2 {
+    color: #0f172a;
+    font-size: 28px;
+}
+
+.view-all {
+    color: #fa5252;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-all:hover {
+    color: #e03131;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.event-card {
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.event-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.event-card h3 {
+    color: #0f172a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.event-card a {
+    display: inline-block;
+    background-color: #fa5252;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.event-card a:hover {
+    background-color: #e03131;
+}
+
+
+/* =========================
+   5. EVENT CATEGORIES
+========================= */
+
+.event-categories {
+    padding: 30px;
+    margin: 20px 24px;
+}
+
+.event-categories h2 {
+    color: #0f172a;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 0;
+    min-height: 120px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category span {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.category h3 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.technical {
+    background-color: #eaf4ff;
+    color: #1769d2;
+}
+
+.cultural {
+    background-color: #ffe9ee;
+    color: #e83e63;
+}
+
+.sports {
+    background-color: #e4fff2;
+    color: #16865b;
+}
+
+.workshops {
+    background-color: #fff5dc;
+    color: #b87512;
+}
+
+.category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================
+   6. FOOTER
+========================= */
+
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-links a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fa5252;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #334e68;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+
+/* =========================
+   7. RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+    .event-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        margin: 15px;
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    .hero-content {
+        padding: 22px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .featured-events {
+        padding: 0 15px;
+    }
+
+    .event-categories {
+        padding: 15px;
+        margin: 20px 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .event-container,
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-heading {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        justify-content: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+/* Keep the image and category tag together */
+.event-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Place the tag over the bottom-left of the image */
+.event-tag {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+/* Category tag colors */
+.technical-tag {
+    color: #1769d2;
+}
+
+.cultural-tag {
+    color: #e83e63;
+}
+
+.sports-tag {
+    color: #16865b;
+}
