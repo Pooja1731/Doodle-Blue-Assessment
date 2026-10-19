@@ -1,0 +1,305 @@
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #102a43;
+}
+
+main {
+    padding: 0 24px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo span {
+    background-color: #f59f00;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fa5252;
+}
+.nav-links a.active {
+    color: #fa5252;
+}
+.nav-links a:hover {
+    color: #fa5252;
+}
+.about-hero {
+    background-image: url("../images/college.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px 24px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 650px;
+    padding: 25px 30px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+}
+
+.about-hero h1 {
+    color: #000000;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.7;
+}
+.our-mission {
+    padding: 25px;
+}
+
+.our-mission h2 {
+    color: #102a43;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.mission-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mission-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 5px solid #f59f00;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+}
+
+.mission-card span {
+    display: block;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.mission-card h3 {
+    color: #102a43;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.event-types {
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.event-types h2 {
+    color: #102a43;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.event-type-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.event-type {
+    padding: 22px 15px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 4px solid #f59f00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.event-type:hover {
+    transform: translateY(-4px);
+}
+
+.event-type span {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.event-type h3 {
+    color: #102a43;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.event-type p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.technical {
+    background-color: #eaf4ff;
+}
+
+.cultural {
+    background-color: #fff1f2;
+}
+
+.sports {
+    background-color: #e4fff2;
+}
+
+.workshops {
+    background-color: #fff5dc;
+}
+
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Footer links */
+.footer-links a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+    color: #fa5252;
+}
+
+/* Copyright section */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #334e68;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+}
+
+.our-mission h2,
+.event-types h2 {
+    font-size: 28px;
+}
+
+.mission-card h3,
+.event-type h3 {
+    font-size: 20px;
+}
+
+.about-hero p,
+.mission-card p,
+.event-type p {
+    font-size: 16px;
+}

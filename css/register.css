@@ -1,0 +1,245 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #102a43;
+}
+/* Header color from our chosen theme */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo span {
+    background-color: #f59f00;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+
+.nav-links a:hover {
+    color: #fa5252;
+}
+
+
+.nav-links a.active {
+    color: #fa5252;
+}
+/* Footer styling */
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Footer links */
+.footer-links a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+    color: #fa5252;
+}
+
+/* Copyright section */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #334e68;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+/* Registration page */
+.register-page {
+    max-width: 850px;
+    width: 90%;
+    margin: 35px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+}
+
+.register-heading {
+    margin-bottom: 25px;
+}
+
+.register-heading h1 {
+    color: #102a43;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.register-heading p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Two-column form layout */
+.register-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #102a43;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #fa5252;
+    box-shadow: 0 0 0 3px rgba(250, 82, 82, 0.12);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.agreement {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.agreement input {
+    width: auto;
+}
+
+.agreement label {
+    font-weight: normal;
+}
+
+.register-submit {
+    grid-column: 1 / -1;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #fa5252;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-submit:hover {
+    background: #e03131;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    .register-page {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    .register-form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .register-heading h1 {
+        font-size: 25px;
+    }
+}

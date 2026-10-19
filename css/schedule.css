@@ -1,0 +1,259 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #102a43;
+}
+/* Header color from our chosen theme */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo span {
+    background-color: #f59f00;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+
+.nav-links a:hover {
+    color: #fa5252;
+}
+
+
+.nav-links a.active {
+    color: #fa5252;
+}
+/* Footer styling */
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Footer links */
+.footer-links a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+    color: #fa5252;
+}
+
+/* Copyright section */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #334e68;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+/* Schedule page */
+.schedule-page {
+    padding: 30px;
+}
+
+/* Page heading */
+.schedule-heading {
+    margin-bottom: 25px;
+}
+
+.schedule-heading h1 {
+    font-size: 32px;
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.schedule-heading p {
+    color: #475569;
+    font-size: 16px;
+}
+
+/* Table container */
+.schedule-table-section {
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* Table styling */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #fa5252;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.schedule-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 14px;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #fff8f8;
+}
+
+/* Category tags */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.technical-tag {
+    background-color: #eaf4ff;
+    color: #1769d2;
+}
+
+.cultural-tag {
+    background-color: #ffe9ee;
+    color: #e83e63;
+}
+
+.sports-tag {
+    background-color: #e4fff2;
+    color: #16865b;
+}
+
+.workshop-tag {
+    background-color: #fff5dc;
+    color: #b87512;
+}
+
+/* View button */
+.view-btn {
+    display: inline-block;
+    padding: 7px 18px;
+    border: 1px solid #fa5252;
+    border-radius: 7px;
+    color: #fa5252;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: #fa5252;
+    color: white;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .schedule-page {
+        padding: 20px 15px;
+    }
+
+    .schedule-heading h1 {
+        font-size: 26px;
+    }
+
+    .schedule-table {
+        min-width: 750px;
+    }
+}
+
+/* Style the View button */
+.schedule-table td a {
+    display: inline-block;
+    padding: 8px 22px;
+    color: #fa5252;
+    background-color: #ffffff;
+    border: 1px solid #fa5252;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.schedule-table td a:hover {
+    background-color: #fa5252;
+    color: #ffffff;
+}

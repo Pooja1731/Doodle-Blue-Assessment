@@ -1,0 +1,345 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #102a43;
+}
+/* Header color from our chosen theme */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo span {
+    background-color: #f59f00;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+
+.nav-links a:hover {
+    color: #fa5252;
+}
+
+
+.nav-links a.active {
+    color: #fa5252;
+}
+/* Footer styling */
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Footer links */
+.footer-links a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+    color: #fa5252;
+}
+
+/* Copyright section */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #334e68;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+/* Event details page */
+.event-details-page {
+    padding: 25px 30px;
+    color: #102a43;
+}
+
+/* Back link */
+.back-link {
+    display: inline-block;
+    color: #fa5252;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back-link:hover {
+    color: #e03131;
+}
+
+/* Each event section */
+.detail-event {
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #edf0f5;
+    border-top: 4px solid #f59f00;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+    scroll-margin-top: 100px;
+}
+
+/* Event title and tag */
+.detail-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.detail-heading h2 {
+    font-size: 28px;
+    color: #102a43;
+    margin: 0;
+}
+
+.detail-subtitle {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Image/content and information layout */
+.detail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(240px, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.detail-main img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.detail-main h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #102a43;
+}
+
+.detail-main p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Information card */
+.event-information {
+    background: rgba(234, 244, 255, 0.65);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.event-information h3 {
+    font-size: 19px;
+    margin-bottom: 18px;
+    color: #102a43;
+}
+
+.event-information p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Register button */
+.register-btn {
+    display: block;
+    background-color: #fa5252;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 16px;
+    border-radius: 9px;
+    line-height: 1.5;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e03131;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .event-details-page {
+        padding: 20px 16px;
+    }
+
+    .detail-event {
+        padding: 18px;
+    }
+
+    .detail-heading h2 {
+        font-size: 23px;
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-main img {
+        height: 220px;
+    }
+}
+
+/* Event category tags */
+.event-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Technical tag */
+.technical-tag {
+    background-color: #eaf4ff;
+    color: #1769d2;
+}
+
+/* Cultural tag */
+.cultural-tag {
+    background-color: #ffe9ee;
+    color: #e83e63;
+}
+
+/* Sports tag */
+.sports-tag {
+    background-color: #e4fff2;
+    color: #16865b;
+}
+
+/* Workshop tag */
+.workshop-tag {
+    background-color: #fff5dc;
+    color: #b87512;
+}
+.technical-tag {
+    display: inline-block;
+    background-color: #eaf4ff;
+    color: #1769d2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Common category badge design */
+.detail-heading .tag {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+    border: none;
+    text-decoration: none;
+}
+
+/* Technical - Blue */
+.technical-tag {
+    background-color: #eaf4ff;
+    color: #1769d2;
+}
+
+/* Cultural - Pink */
+.cultural-tag {
+    background-color: #ffe9ee;
+    color: #e83e63;
+}
+
+/* Sports - Green */
+.sports-tag {
+    background-color: #e4fff2;
+    color: #16865b;
+}
+
+/* Workshop - Amber */
+.workshop-tag {
+    background-color: #fff5dc;
+    color: #b87512;
+}
