@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1>dbClick event</h1>
+    <p>These events are useful for hover behaviour and do not retriggere just beacuse the pointer</p>
+    <div id="target"  class="box">Move in and out.<br>
+        <strong>This ia a child element.</strong>
+    </div></div><p id="results" class="results">Waiting...</p>
+    <script>
+        const target=document.querySelector("#target");
+        const results=document.querySelector("#results");
+        target.addEventListener("mouseenter" ,()=>{
+            target.style.backgroundcolor="#fed7aa";
+            results.textContent="Mouse enter : Pointer entered the box!";
+        });
+        target.addEventListener("mouseleave" ,()=>{
+            target.style.backgroundcolor="#dbeafe";
+            results.textContent="Mouse leave : Pointer left the box!";
+        });
+    </script>
+</body>
