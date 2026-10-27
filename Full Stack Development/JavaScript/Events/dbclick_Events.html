@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1>dbClick event</h1>
+    <p>Double - click the box below to change it</p>
+    <p id="target"  class="box">Double click this box</p>
+    <script>
+        const target=document.querySelector("#target");
+        target.addEventListener("dbclick" ,()=>{
+            target.textContent="You double-clicked the box!";
+            target.style.backgroundcolor="#bbf7d0";
+        });
+    </script>
+</body>

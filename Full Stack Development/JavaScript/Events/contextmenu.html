@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h3>Contextmenu - Right-click</h3>
+    <p>Right-click the box. preventDefault() stops the browser's normal context menu for this element.</p>
+    <div id="target" class="box">Right-click here</div>
+    <p id="result">Result: Waiting...</p>
+
+    <script>
+        const target = document.querySelector('#target');
+        const result = document.querySelector('#result');
+
+        target.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            result.textContent = "Custom right-click action!";
+            target.style.backgroundColor = 'beige';
+        });
+    </script>
+
+</body>

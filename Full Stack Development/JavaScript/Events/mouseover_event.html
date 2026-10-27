@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1>mouseover and mouseout event</h1>
+    <p>Move the mouse over and move it out</p>
+    <div id="target"  class="box">move your pointer over me<br>
+        <strong>Trymoving over this child text.</strong>
+        </div><p id="results" class="results">Waiting...</p>
+    <script>
+        const target=document.querySelector("#target");
+        const results=document.querySelector("#results");
+        target.addEventListener("mouseover" ,()=>{
+            target.style.backgroundcolor="#fed7aa";
+            results.textContent="Mouseover Fired!";
+        });
+        target.addEventListener("mouseout" ,()=>{
+            target.style.backgroundcolor="#dbeafe";
+            results.textContent="Mouseout Fired!";
+        });
+    </script>
+</body>
