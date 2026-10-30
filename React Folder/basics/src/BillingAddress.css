@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.billing-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 12px;
+  background: linear-gradient(135deg, #397f7b, #176b73);
+}
+
+.billing-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 22px 17px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(12px);
+}
+
+.billing-card h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+
+.billing-card .input {
+  margin-bottom: 14px;
+}
+
+.billing-card .input label,
+.address-label {
+  display: none;
+}
+
+.billing-card .input input {
+  width: 100%;
+  height: 49px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 14px;
+}
+
+.billing-card input::placeholder,
+.billing-card textarea::placeholder {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.billing-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.billing-location .form-group {
+  width: 100%;
+  min-width: 0;
+}
+
+.billing-location select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.billing-location .form-input label {
+  display: none;
+}
+
+.billing-location select {
+  width: 100%;
+  height: 49px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 13px;
+}
+
+.billing-location select option {
+  background: white;
+  color: #176b73;
+}
+
+.billing-card textarea {
+  width: 100%;
+  height: 110px;
+  padding: 14px;
+  margin-bottom: 12px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.billing-policy {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 12px 4px;
+  color: white;
+  font-size: 13px;
+}
+
+.billing-policy input {
+  accent-color: white;
+}
+
+.billing-card .form-button {
+  width: 100%;
+  min-height: 54px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.billing-card .form-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.error-message {
+  color: #ffe0e0;
+  font-size: 13px;
+  margin: 8px 4px;
+}
+
+.success-message {
+  color: #e0ffe9;
+  font-size: 13px;
+  margin: 8px 4px;
+}
+
+@media (max-width: 360px) {
+  .billing-card {
+    padding: 20px 13px;
+  }
+
+  .billing-card h2 {
+    font-size: 23px;
+  }
+}
