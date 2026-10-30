@@ -1,0 +1,575 @@
+
+/* ==============================
+   Global Reset
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fa;
+  color: #151522;
+  line-height: 1.6;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+/* ==============================
+   Main Page
+============================== */
+
+.explorer-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.explorer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ==============================
+   Header
+============================== */
+
+.explorer-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e5eb;
+}
+
+.explorer-header-inner {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 112px;
+  margin: 0 auto;
+  padding: 20px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.explorer-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: #151522;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.explorer-brand-mark {
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.explorer-header-note {
+  color: #777b8b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* ==============================
+   Introduction
+============================== */
+
+.explorer-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  padding: 28px 0 40px;
+}
+
+.explorer-intro > div:first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+.explorer-eyebrow {
+  margin-bottom: 12px;
+
+  color: #73788a;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.explorer-intro .explorer-eyebrow {
+  margin-bottom: 16px;
+}
+
+.explorer-intro h2 {
+  margin-bottom: 14px;
+
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.2;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.explorer-description {
+  color: #666c7d;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.explorer-total {
+  min-width: 130px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #e3e6ee;
+  border-radius: 14px;
+}
+
+.explorer-total strong {
+  color: #4f46e5;
+  font-size: 30px;
+}
+
+.explorer-total span {
+  color: #777b8b;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ==============================
+   Search, Filter and Sort
+============================== */
+
+.explorer-controls {
+  display: grid;
+  grid-template-columns: minmax(240px, 2fr)
+                         minmax(150px, 1fr)
+                         minmax(170px, 1fr)
+                         auto;
+  align-items: end;
+  gap: 20px;
+
+  padding: 24px;
+  margin-bottom: 36px;
+
+  background: #ffffff;
+  border: 1px solid #e3e6ee;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(20, 25, 50, 0.04);
+}
+
+.explorer-search,
+.explorer-select {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 8px;
+}
+
+.explorer-controls label {
+  color: #333849;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.explorer-controls input,
+.explorer-controls select {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+
+  padding: 0 12px;
+
+  color: #25283a;
+  background: #ffffff;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  outline: none;
+}
+
+.explorer-controls input:focus,
+.explorer-controls select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.explorer-controls input::placeholder {
+  color: #999eac;
+}
+
+.explorer-hint {
+  color: #85899a;
+  font-size: 12px;
+}
+
+.explorer-clear {
+  min-height: 46px;
+  padding: 0 18px;
+
+  color: #4f46e5;
+  background: #ffffff;
+  border: 1px solid #4f46e5;
+  border-radius: 8px;
+
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.explorer-clear:hover {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+/* ==============================
+   Results Heading
+============================== */
+
+.explorer-results {
+  width: 100%;
+  min-width: 0;
+}
+
+.explorer-results-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-bottom: 26px;
+}
+
+.explorer-results-heading .explorer-eyebrow {
+  margin-bottom: 6px;
+}
+
+.explorer-results-heading h3 {
+  color: #191a27;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.explorer-result-count {
+  padding: 7px 14px;
+
+  color: #4f46e5;
+  background: #eeedff;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==============================
+   Student Grid
+============================== */
+
+.explorer-grid {
+  display: grid;
+
+  /* Three equal-width cards on desktop */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* ==============================
+   Student Card
+============================== */
+
+.explorer-card {
+  width: 100%;
+  min-width: 0;
+  padding: 26px;
+
+  background: #ffffff;
+  border: 1px solid #e2e5ed;
+  border-radius: 18px;
+
+  box-shadow: 0 5px 20px rgba(20, 25, 50, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.explorer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(20, 25, 50, 0.09);
+}
+
+.explorer-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-bottom: 24px;
+}
+
+.explorer-avatar {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4f46e5;
+  background: #e5e7ff;
+  border-radius: 50%;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.explorer-student-id {
+  color: #777b8b;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.explorer-card h4 {
+  margin-bottom: 12px;
+
+  color: #171824;
+  font-size: 22px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.explorer-email {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 24px;
+
+  color: #4f46e5;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-decoration: none;
+}
+
+.explorer-email:hover {
+  text-decoration: underline;
+}
+
+.explorer-card-divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
+
+  background: #e9ebf2;
+}
+
+.explorer-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.explorer-card-details p {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.explorer-card-details span {
+  color: #85899a;
+  font-size: 13px;
+}
+
+.explorer-card-details strong {
+  color: #303345;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   Loading, Error and Empty States
+============================== */
+
+.explorer-message {
+  padding: 32px 20px;
+
+  color: #686d7e;
+  background: #ffffff;
+  border: 1px solid #e3e6ee;
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.explorer-error {
+  color: #b42318;
+  border-color: #fecaca;
+}
+
+.explorer-error button {
+  margin-top: 16px;
+  padding: 10px 18px;
+
+  color: #ffffff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ==============================
+   Footer
+============================== */
+
+.explorer-footer {
+  margin-top: 48px;
+  padding: 24px 0;
+
+  color: #85899a;
+  border-top: 1px solid #e2e5ed;
+
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width: 1000px) {
+  .explorer-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .explorer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .explorer-intro {
+    align-items: flex-start;
+  }
+
+  .explorer-header-note {
+    display: none;
+  }
+}
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width: 600px) {
+  .explorer-header-inner {
+    min-height: 86px;
+    padding: 16px 20px;
+  }
+
+  .explorer-brand {
+    gap: 12px;
+    font-size: 24px;
+  }
+
+  .explorer-brand-mark {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    font-size: 28px;
+  }
+
+  .explorer-content {
+    padding: 24px 16px;
+  }
+
+  .explorer-intro {
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px 0 28px;
+  }
+
+  .explorer-intro h2 {
+    font-size: 30px;
+  }
+
+  .explorer-description {
+    font-size: 15px;
+  }
+
+  .explorer-total {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .explorer-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 18px;
+    margin-bottom: 28px;
+  }
+
+  .explorer-results-heading h3 {
+    font-size: 25px;
+  }
+
+  .explorer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .explorer-card {
+    padding: 22px;
+  }
+
+  .explorer-card h4 {
+    font-size: 20px;
+  }
+
+  .explorer-footer {
+    margin-top: 32px;
+  }
+}
