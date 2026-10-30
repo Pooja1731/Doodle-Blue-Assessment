@@ -1,0 +1,75 @@
+{
+  "billingAddresses": [
+    {
+      "name": "POOJA J",
+      "email": "jpoojajrpg31@gmail.com",
+      "phone": "7904176515",
+      "country": "India",
+      "city": "Mumbai",
+      "address": "No.17b , porur",
+      "agree": true,
+      "id": "9rUanzKdo7A"
+    },
+    {
+      "name": "harini",
+      "email": "harini@11234",
+      "phone": "8608897047",
+      "country": "UK",
+      "city": "Bangalore",
+      "address": "No.11 , alapakkam",
+      "agree": true,
+      "id": "g9p1NvA3WDQ"
+    },
+    {
+      "name": "Shamkisha",
+      "email": "shamiksha@gmail.com",
+      "phone": "9627810467",
+      "country": "UK",
+      "city": "Bangalore",
+      "address": "no. 19 , madurai",
+      "agree": true,
+      "id": "P58xsyxG7zI"
+    },
+    {
+      "name": "Shamkisha",
+      "email": "shamiksha@gmail.com",
+      "phone": "9627810467",
+      "country": "",
+      "city": "",
+      "address": "no. 19 , madurai",
+      "agree": true,
+      "id": "U-NuGmqUsrY"
+    },
+    {
+      "name": "Shamkisha",
+      "email": "shamiksha@gmail.com",
+      "phone": "9627810467",
+      "country": "",
+      "city": "",
+      "address": "no. 19 , madurai",
+      "agree": true,
+      "id": "X6E0Em_1Ngo"
+    },
+    {
+      "name": "Shamkisha",
+      "email": "shamiksha@gmail.com",
+      "phone": "9627810467",
+      "country": "",
+      "city": "",
+      "address": "no. 19 , madurai",
+      "agree": true,
+      "id": "EWpjWw_gPHY"
+    },
+    {
+      "name": "Riya",
+      "email": "riya@gmail.com",
+      "phone": "7529381903",
+      "country": "USA",
+      "city": "Mumbai",
+      "address": "No. 24 , porur",
+      "agree": true,
+      "id": "VYtjBUbvcZA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
